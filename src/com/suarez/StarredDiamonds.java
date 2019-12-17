@@ -81,7 +81,7 @@ public class StarredDiamonds {
             System.out.println("|");
         }
         firstStar();
-        //
+        //prints the bottom star shape by inheriting the previous space and line functions
     }
     public static void top(){
         firstStar();
@@ -97,6 +97,7 @@ public class StarredDiamonds {
             System.out.println("|");
         }
     }
+    //same as the bot comment
 
     }
 
