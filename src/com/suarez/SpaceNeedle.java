@@ -48,6 +48,7 @@ public class SpaceNeedle {
     }
     public static void botHead(){
         for(int line = 1; line <= SIZE; line++){
+            //line maker
             for(int i = 1; i <= 2*(line)-1; i++){
                 System.out.print(" ");
             }
