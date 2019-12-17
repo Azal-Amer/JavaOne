@@ -19,15 +19,18 @@ public class SizeFugure {
             for (int space = 1; space <= -line+(SIZE + 1);space++) {
                 System.out.print(" ");
             }
+            //prints the spaces before the shape
             System.out.print("/");
             for(int spaceBetween = 1; spaceBetween <= 2*line-2; spaceBetween++){
                 System.out.print("/");
             }
+            //makes the recursive slashes that don't include the initial outside "Sandwich" slashes
             System.out.println("\\");
         }
     }
     public static void bot(int SIZE){
         for(int line=1; line <= SIZE; line++  ) {
+            //top but reversed
             for (int space = 1; space <= line-1;space++) {
                 System.out.print(" ");
             }
@@ -45,7 +48,7 @@ public class SizeFugure {
     }
     public static void main(String[] args) {
         //top(1);
-        bot(3);
+        bot(6);
 
 	// write your code here
     }

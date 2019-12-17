@@ -24,10 +24,13 @@ public class RocketShip {
             spaces(line);
             System.out.print("/");
             for (int spaceBetween = 1; spaceBetween <= line - 1; spaceBetween++) System.out.print("/");
+            // I made the for loop one line to save space, this basically makes the left side
             System.out.print("**");
             for (int spaceBetween = 1; spaceBetween <= line - 1; spaceBetween++) System.out.print("\\");
+            //makes right side
             System.out.print("\\");
             spaces(line);
+            //calls the spaces function by the line defined here so that it recurses
             System.out.println();
         }
     }
@@ -70,18 +73,22 @@ public class RocketShip {
              System.out.print("|");
              for (int j = 1; j <= i-1; j++) {
                  System.out.print(".");
+                 //I was dumb here and made my variables letters. i is lines, j is spaces/periods
              }
              for (int j = 1; j <= SIZE -i+1; j++) {
                  System.out.print("\\/");
              }
              for (int inBetween = 1; inBetween <= 2 * i - 2; inBetween++) {
                  System.out.print(".");
+                 //the in between dots for the ship
              }
              for (int j = 1; j <= SIZE - i+1; j++) {
                  System.out.print("\\/");
+                 //the fire for the ship
              }
              for (int k = 1; k <= i-1; k++) {
                  System.out.print(".");
+                 //final dots
 
              }
              System.out.print("|\n");

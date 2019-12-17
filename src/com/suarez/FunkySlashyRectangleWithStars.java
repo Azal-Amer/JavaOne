@@ -33,11 +33,13 @@ public class FunkySlashyRectangleWithStars {
 
     public static void stars(int line) {
         for (int stars = SIZE; stars >= line; stars--) {
+            //starts = line number at the end, makes triangle shape
             System.out.print("*");
         }
     }
     public static void spaces(int line){
         for(int spaces = 1; spaces<=line; spaces++){
+            //spaces is also equal to the final line value
             System.out.print(" ");
         }
 

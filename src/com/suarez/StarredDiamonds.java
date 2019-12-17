@@ -19,29 +19,35 @@ public class StarredDiamonds {
     public static void spaces(int amount){
         for(int space =SIZE; space >= amount+1; space --){
             System.out.print(" ");
+            //spaces before the shape
         }
     }
     public static void betweenSpacesPre(int line){
+        //calls the spaces pre with the line function, which is used in the top method
             for(int spaceBetween = 1; spaceBetween <= line-1; spaceBetween++){
                 System.out.print("/");
             }
         }
     public static void betweenSpacesPost(int line){
         for(int spaceBetween = 1; spaceBetween <= line-1; spaceBetween++) System.out.print("\\");
+        //same as previous comment
     }
     public static void betweenSpacesPreBot(int lines){
         for(int spaceBetween = SIZE; spaceBetween >= lines+1; spaceBetween--){
             System.out.print("\\");
+            //same as previous comment
         }
 
     }
     public static void betweenSpacesPostBot(int lines){
         for(int spaceBetween = SIZE; spaceBetween >= lines+1; spaceBetween--){
             System.out.print("/");
+            //same as previous comment
     }}
     public static void botSpaces(int lines){
         for(int space =2; space <= lines; space ++){
             System.out.print(" ");
+            //spaces before the inside box
         }
 
     }
@@ -51,12 +57,14 @@ public class StarredDiamonds {
         System.out.print("*");
         spaces(0);
         System.out.println("|");
+        //this basically is making the top triangle thing
     }
     public static void lid(){
         System.out.print("+");
 
         for(int dash = 1; dash <= 2*SIZE+1;dash++){
             System.out.print("-");
+            //makes the dashes that are sandwiched
         }
         System.out.println("+");
     }
@@ -73,6 +81,7 @@ public class StarredDiamonds {
             System.out.println("|");
         }
         firstStar();
+        //
     }
     public static void top(){
         firstStar();

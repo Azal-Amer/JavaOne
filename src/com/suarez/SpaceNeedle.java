@@ -50,9 +50,11 @@ public class SpaceNeedle {
         for(int line = 1; line <= SIZE; line++){
             //line maker
             for(int i = 1; i <= 2*(line)-1; i++){
+                //spaces maker
                 System.out.print(" ");
             }
             System.out.print("\\_");
+            //inside triangle maker loop
             for(int i = 1; i <= 3*SIZE -2*line; i++){
                 System.out.print("/\\");
             }
@@ -62,7 +64,9 @@ public class SpaceNeedle {
     }
     public static void percentPole(){
 
+
         for(int i = 1; i<= SIZE*SIZE; i++){
+            //makes the amount of times to repeat the lines size^2
             for (int j = 1 ; j <= (SIZE*3)-3; j++){
                 System.out.print(" ");
             }
