@@ -1,8 +1,7 @@
 package com.suarez;
-import java.lang.reflect.AccessibleObject;
 import java.util.*;
 import java.io.*;
-public class CheckFileUser {
+public class FinalProjectClassClient {
 //    public static boolean usernameSearcher(String path, String username) throws IOException {
 //        final Scanner scanner = new Scanner(new File(path));
 //        boolean detect = false;
@@ -60,7 +59,7 @@ public class CheckFileUser {
                 //and then take the next term as the password
                 String user = passw.next();
                 password= passw.next();
-                String encrypt = FinalProjectEncryptor.main(password);
+                String encrypt = EncryptorClientClass.main(password);
                 System.out.print(encrypt);
                 //The reason this became a "main" class was because it allowed for easy implementation with my initial final project,
                 //without much friction
@@ -76,7 +75,7 @@ public class CheckFileUser {
              password = console1.nextLine();
 
             FileWriter userData = new FileWriter(path, true);
-            String encrypt = FinalProjectEncryptor.main(password);
+            String encrypt = EncryptorClientClass.main(password);
             //The above code is the one that encrypts the users password
             System.out.println(encrypt);
             userData.write("\n" + username + "  " + encrypt);
