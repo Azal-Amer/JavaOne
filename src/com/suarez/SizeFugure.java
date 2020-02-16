@@ -47,8 +47,8 @@ public class SizeFugure {
 
     }
     public static void main(String[] args) {
-        top(1);
-        //bot(6);
+        top(6);
+        bot(6);
 
 	// write your code here
     }
