@@ -2,31 +2,6 @@ package com.suarez;
 import java.util.*;
 import java.io.*;
 public class FinalProjectClassClient {
-//    public static boolean usernameSearcher(String path, String username) throws IOException {
-//        final Scanner scanner = new Scanner(new File(path));
-//        boolean detect = false;
-//        File file = new File("C:\\Users\\amer_\\IdeaProjects\\The Suffering of Suares (Her name not mine)\\src\\com\\suarez\\" + username + ".txt");
-//        /*If file gets created then the createNewFile()
-//         * method would return true or if the file is
-//         * already present it would return false
-//         */
-//        while (scanner.hasNextLine()) {
-//            String lineFromFile = scanner.nextLine();
-//            if (lineFromFile.contains(username)) {
-//                // a match!
-//                System.out.println("I found " + username);
-//                detect = true;
-//                break;
-//            }
-//        }
-//        if (detect == false) {
-//            FileWriter fr = new FileWriter(path, true);
-//            fr.write("\n" + username);
-//            fr.close();
-//            System.out.println("New username generated");
-//        }
-//        return detect;
-//    }
     public static void makefile(String path, String username) {
         try {
             File file = new File(path + username + ".jpeg");
@@ -67,7 +42,7 @@ public class FinalProjectClassClient {
                 //this is making sure the program knows not to write another password to this line, it "Detects" the password
                 break;
             }
-        }
+         }
         if (detect == false) {
             //the username isn't detected
             System.out.print("A new account has been made, what is the password?");

@@ -69,18 +69,11 @@ public class EncryptorClass {
                 shiftArray[i] = (charLocation[i] + shift) - (alphabetArray.length - 1);
                 //so that we don't get a -1 error, the array will loop
             }
-//            else if (charLocation[i] + shift < 0) {
-//                shiftArray[i] = (alphabetArray.length - 1) + (charLocation[i] + shift);
-//            } else if (charLocation[i] + shift < 0 && (((alphabetArray.length - 1) + (charLocation[i] + shift)) > 0)) {
-//                shiftArray[i] = (alphabetArray.length - 1) + (charLocation[i] + shift);
-
             else {
                 shiftArray[i] = charLocation[i] + shift;
             }
         }
             //The above logic was designed for a previous iteration of the code, I left it in so that you could use the class in a wider variety of scenarios (Also the code breaks without some of them)
-
-
         return shiftArray;
     }
     public static String alphaDecode(String[] brokenString, int[] shiftArray, String[] alphabetArray) {
