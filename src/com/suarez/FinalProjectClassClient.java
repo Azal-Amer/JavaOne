@@ -4,7 +4,7 @@ import java.io.*;
 public class FinalProjectClassClient {
     public static void makefile(String path, String username) {
         try {
-            File file = new File(path + username + ".jpeg");
+            File file = new File(path + username + ".txt");
             /*If file gets created then the createNewFile()
              * method would return true or if the file is
              * already present it would return false
@@ -42,12 +42,12 @@ public class FinalProjectClassClient {
                 //this is making sure the program knows not to write another password to this line, it "Detects" the password
                 break;
             }
-         }
+        }
         if (detect == false) {
             //the username isn't detected
             System.out.print("A new account has been made, what is the password?");
             Scanner console1 = new Scanner(System.in);
-             password = console1.nextLine();
+            password = console1.nextLine();
 
             FileWriter userData = new FileWriter(path, true);
             String encrypt = EncryptorClientClass.main(password);
@@ -83,11 +83,7 @@ public class FinalProjectClassClient {
         //boolean detect = usernameSearcher(path+user+".txt", user);
         System.out.println("checking for password");
         //usernameSearcherPass(path+user+".txt", account);
-        usernameSearcherPass(path+user+".jpeg", account);
+        usernameSearcherPass(path+user+".txt", account);
 
     }
 }
-
-
-
-

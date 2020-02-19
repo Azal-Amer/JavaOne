@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="The Suffering of Suares (Her name not mine):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/The_Suffering_of_Suares__Her_name_not_mine__jar</output-path>
+    <root id="archive" name="The Suffering of Suares (Her name not mine).jar">
+      <element id="module-output" name="The Suffering of Suares (Her name not mine)" />
+    </root>
+  </artifact>
+</component>
