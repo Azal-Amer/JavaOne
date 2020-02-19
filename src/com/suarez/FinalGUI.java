@@ -32,7 +32,8 @@ public class FinalGUI {
                 "2. Remember the key number you use to encrypt your password, or you will loose access!\n" +
                 "3. When accessing a previous password, to decrypt them just input the same key you used to encrypt them\n" +
                 "3a. Make sure that when you are placing your password directory, that it ends with a \" \\ \" !\n" +
-                "Have fun!");
+                "4. Do not put spaces in your username and password or they will be replaced !\n" +
+                        "Have fun!");
         JFrame frame = new JFrame("App");
         frame.setContentPane(new FinalGUI().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
