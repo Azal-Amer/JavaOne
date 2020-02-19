@@ -33,6 +33,7 @@ public class FinalGUI {
                 "3. When accessing a previous password, to decrypt them just input the same key you used to encrypt them\n" +
                 "3a. Make sure that when you are placing your password directory, that it ends with a \" \\ \" !\n" +
                 "4. Do not put spaces in your username and password or they will be replaced !\n" +
+                        "5. Do not input non--numerical charecters when prompted to input the shift!!\n" +
                         "Have fun!");
         JFrame frame = new JFrame("App");
         frame.setContentPane(new FinalGUI().panel1);
